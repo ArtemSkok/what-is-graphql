@@ -1,12 +1,37 @@
 const books = [
-  { id: "1", name: "Book 1", publicationYear: 2021 },
-  { id: "2", name: "Book 2", publicationYear: 2022 },
-  { id: "3", name: "Book 3", publicationYear: 2023 },
+  {
+    id: "1",
+    name: "Book 1",
+    publicationYear: 2021,
+    coverImageUrl: "http://example.com/1",
+  },
+  {
+    id: "2",
+    name: "Book 2",
+    publicationYear: 2022,
+    coverImageUrl: "http://example.com/2",
+  },
+  {
+    id: "3",
+    name: "Book 3",
+    publicationYear: 2023,
+    coverImageUrl: "http://example.com/3",
+  },
 ];
 
 const authors = [
-  { id: "1", name: "Author 1" },
-  { id: "2", name: "Author 2" },
+  {
+    id: "1",
+    name: "Author 1",
+    birthYear: 1990,
+    description: "__long_text_1__",
+  },
+  {
+    id: "2",
+    name: "Author 2",
+    birthYear: 1979,
+    description: "__long_text_2__",
+  },
 ];
 
 const bookAuthorships = [
