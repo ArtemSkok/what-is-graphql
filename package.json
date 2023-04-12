@@ -1,0 +1,11 @@
+{
+  "name": "what-is-graphql",
+  "scripts": {
+    "start": "node --inspect ./src/index.js"
+  },
+  "author": "Artem Skok",
+  "dependencies": {
+    "@apollo/server": "^4.6.0",
+    "graphql": "^16.6.0"
+  }
+}

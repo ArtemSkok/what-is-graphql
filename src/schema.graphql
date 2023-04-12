@@ -1,0 +1,38 @@
+#graphql
+
+type Author {
+  id: ID!
+  name: String!
+  books: [Book!]
+}
+
+type Book {
+  id: ID!
+  name: String!
+  publicationYear: Int!
+  coverImageUrl: String!
+  authors: [Author!]!
+}
+
+type Query {
+  authors: [Author!]!
+  author(id: ID!): Author
+  books: [Book!]!
+  book(id: ID!): Book
+}
+
+input AddAuthorInput {
+  id: ID!
+  name: String!
+}
+
+input AddBookInput {
+  id: ID!
+  publicationYear: Int!
+  authorsIds: [ID!]!
+}
+
+type Mutation {
+  addAuthor(input: AddAuthorInput): Author
+  addBook(input: AddBookInput): Book
+}
